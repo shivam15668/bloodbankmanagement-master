@@ -9,6 +9,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('patient', '0001_initial'),
         ('donor', '0001_initial'),
+        #('lab','0001_initial'),
         ('blood', '0002_bloodrequest'),
     ]
 

@@ -10,6 +10,8 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User
 from donor import models as dmodels
 from patient import models as pmodels
+from lab import models as lmodels
+from lab import forms as lforms
 from donor import forms as dforms
 from patient import forms as pforms
 
@@ -246,3 +248,4 @@ def reject_donation_view(request,pk):
     donation.status='Rejected'
     donation.save()
     return HttpResponseRedirect('/admin-donation')
+
